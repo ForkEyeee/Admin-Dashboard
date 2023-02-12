@@ -1,0 +1,106 @@
+body {
+    font-family: "Roboto";
+    margin:0px;
+}
+
+h3{
+    margin: 0px;
+}
+
+.main-container{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "sidebar header"
+        "sidebar projects";
+    font-size: large;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    grid-area: header;
+    padding-left: 40px;
+    margin-top: 30px;
+    justify-content: start;
+    gap: 10px;
+    border-bottom: solid;
+}
+
+.projects{
+    grid-area: projects;
+    background-color: #efeff5;
+}
+
+
+.sidebar{
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(13, 129, 182, 0.88);
+    color: rgb(232, 230, 227);
+    font-weight: bold;
+    justify-content: space-evenly;
+    height: 100vh;
+}
+
+.main-content{
+    grid-area: main-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar p {
+    padding-left: 35px;
+}
+
+#searchbar{
+    border-radius: 5px;
+    width: 50%;
+    height: 20px;
+}
+
+.searchmag{
+    display: flex;
+}
+
+.firstheading{
+    margin-top: 15px;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}
+
+.image-wrapper{
+    display: flex;
+    margin-top: 20px;
+}
+
+.hero-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.buttons{
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 50px;
+    margin-right: 50px;
+}
+
+.buttons p{
+    background-color: #15acf1;
+    padding: 15px 35px 15px 35px;
+    border-radius: 50px;
+    color: rgb(232, 230, 227);
+    font-weight: bold;
+    font-family: 'roboto';
+    font-size: 18px;
+}
