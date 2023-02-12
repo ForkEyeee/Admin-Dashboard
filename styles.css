@@ -1,5 +1,6 @@
 body {
     font-family: "Roboto";
+    max-height: 100vh;
     margin:0px;
 }
 
@@ -10,7 +11,7 @@ h3{
 .main-container{
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: .3fr 1fr;
     grid-template-areas:
         "sidebar header"
         "sidebar projects";
@@ -25,14 +26,46 @@ h3{
     margin-top: 30px;
     justify-content: start;
     gap: 10px;
-    border-bottom: solid;
 }
 
 .projects{
-    grid-area: projects;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "firstcard secondcard"
+    "thirdcard fourthcard"
+    "fifthcard sixthcard";
+    padding-top: 10px;
+    padding-left: 30px;
     background-color: #efeff5;
+    gap: 50px;
+    padding-right: 50px;
 }
 
+.firstcard{
+    grid-area: firstcard;
+}
+
+.secondcard{
+    grid-area: secondcard;
+}
+
+.thirdcard{
+    grid-area: thirdcard;
+}
+
+.fourthcard{
+    grid-area: fourthcard;
+}
+
+.fifthcard{
+    grid-area: fifthcard;
+}
+
+.sixthcard{
+    grid-area: sixthcard;
+}
 
 .sidebar{
     grid-area: sidebar;
@@ -58,7 +91,7 @@ h3{
 
 #searchbar{
     border-radius: 5px;
-    width: 50%;
+    width: 100%;
     height: 20px;
 }
 
@@ -70,7 +103,7 @@ h3{
     margin-top: 15px;
 }
 
-img{
+.img{
     width: 100px;
     height: 100px;
 }
@@ -103,4 +136,93 @@ img{
     font-weight: bold;
     font-family: 'roboto';
     font-size: 18px;
+}
+
+#img2{
+    height: 50px;
+    width: 50px;
+}
+
+.hero-flex{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+    padding-right: 54px;
+}
+
+.flex-wrapper{
+    display: flex;
+}
+
+i.fa-solid.fa-magnifying-glass {
+    padding-right: 15px;
+}
+
+.projects div{
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    border-left: 15px solid orange;
+   box-shadow:  2px 5px 10px grey;
+}
+
+.hero-projects{
+    display: flex;
+}
+
+
+.title{
+    display: flex;
+    flex-direction: column;
+}
+
+.title-text{
+    background-color: #efeff5;
+    padding-top: 30px;
+    padding-left: 30px;
+    font-weight: bold;
+    font-size: 27px;
+}
+
+.article-wrapper{
+    display: flex;
+}
+
+.article2-wrapper{
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.article1{
+    padding: 40px;
+    width: 300px;
+    border-style: solid;
+
+}
+.article1 div{
+    border-bottom: 1px solid grey;
+    
+}
+.article2{
+    padding: 40px;
+}
+
+.title-wrapper{
+    display: flex;
+    justify-content: space-between;
+    background-color: #efeff5;
+    font-weight: bold;
+    font-size: 27px;
+    padding-right: 186px;
+}
+
+.title2-text{
+    padding-top: 30px;
+}
+
+.social-head{
+    background-color: #efeff5;
 }
