@@ -73,11 +73,12 @@ h3{
     grid-area: sidebar;
     display: flex;
     flex-direction: column;
-    background-color: #1992d4;
-    color: rgb(232, 230, 227);
+    background-color: #10a1e4e1;
+    color: white;
     font-weight: bold;
     align-items: flex-start;
     padding: 20px;
+    padding-left: 40px;
 }
 
 .main-content{
@@ -136,7 +137,7 @@ h3{
     background-color: #15acf1;
     padding: 15px 35px 15px 35px;
     border-radius: 50px;
-    color: rgb(232, 230, 227);
+    color: white;
     font-weight: bold;
     font-family: 'roboto';
     font-size: 18px;
@@ -165,6 +166,8 @@ i.fa-solid.fa-magnifying-glass {
 }
 
 .projects div{
+    display: flex;
+    flex-direction: column;
     background-color: white;
     padding: 30px;
     border-radius: 20px;
@@ -193,20 +196,28 @@ i.fa-solid.fa-magnifying-glass {
 
 .article-wrapper{
     display: flex;
+    background-color: #efeff5;
+    padding-right: 30px;
+    padding-bottom: 30px;
 }
 
 .article2-wrapper{
     display: flex;
     flex-direction: column;
+    background-color: #efeff5;
+    gap: 0px;
   
 }
 
 .article1{
-    padding: 40px;
+    padding: 40px 40px 20px 40px;
     width: 300px;
-    border-style: solid;
-
+    border-radius: 20px;
+    background-color: white;
+    margin-top: 10px;
 }
+
+
 .article1 div{
     border-bottom: 1px solid grey;
     
@@ -221,7 +232,8 @@ i.fa-solid.fa-magnifying-glass {
     background-color: #efeff5;
     font-weight: bold;
     font-size: 27px;
-    padding-right: 186px;
+    padding-right: 209px;
+    padding-bottom: 20px;
 }
 
 .title2-text{
@@ -352,4 +364,71 @@ i.fa-solid.fa-magnifying-glass {
 #img10{
     height: 20px;
     width: 20px;
+}
+
+#img11{
+    left: -5px;
+    position: relative;
+}
+
+.image-fix{
+    height: 30px;
+    width: 40px;
+}
+
+.icon-flex{
+    display: flex;
+}
+
+.image-fix-span{
+    margin-top: 10px;
+    align-self: flex-end;
+}
+
+.image-fix-span2{
+    align-self: flex-end;
+    margin-top: 40px;
+}
+
+.articlediv1, .articlediv2, .articlediv3{
+    padding:20px;
+    font-size: 16px;
+}
+
+
+.articlediv3{
+    border-bottom: none !important;
+}
+
+.trending {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+p.userid {
+    font-weight: bold;
+}
+
+p.tag {
+    font-style: italic;
+}
+
+.trending-hero{
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    text-align: inherit;
+    margin-top: 80px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.dashboard-text{
+    font-size: 24px;
 }
